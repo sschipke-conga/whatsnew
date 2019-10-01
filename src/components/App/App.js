@@ -13,16 +13,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      source: local,
     }
+  }
+
+  handleButton = file => {
+    this.setState({source:file})
   }
 
   render () {
     return (
       <div className="app">
-        <Menu />
+        <Menu handleButton={this.handleButton}/>
         <SearchForm />
-        <NewsContainer articles={this.state.local}/>
+        <NewsContainer articles={this.state.source}/>
       </div>
     );
   }
