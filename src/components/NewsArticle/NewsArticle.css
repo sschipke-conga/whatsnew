@@ -1,24 +1,27 @@
 article {
   background: yellow;
   border-radius: 5px;
-  height: 40%;
-  width: 25%;
-  margin: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 10px;
+
 }
 
 a {
-  border-bottom: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  background-color: #B56AF0; 
   color: black;
-  font-size: 1.2em;
-  font-weight: 800;
-  text-decoration: none;
+}
+
+.img-div {
+  border-radius: 5px 5px 0 0;
+  height: 250px;
+  overflow: hidden;
+  width: 100%;
 }
 
 img {
-  border-radius: 5px 5px 0 0;
-  height: 45%;
   width: 100%;
 }
