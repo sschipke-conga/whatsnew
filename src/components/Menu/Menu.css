@@ -10,3 +10,19 @@ nav h2 {
 nav span {
   color: yellow;
 }
+
+nav button {
+  background-color: orange;
+  border-radius: 20px;
+  color: white;
+  margin-top: 5px;
+  outline: none;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+nav button:active {
+  border: 2px solid white;
+}
