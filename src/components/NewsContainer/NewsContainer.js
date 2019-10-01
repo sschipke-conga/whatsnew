@@ -6,7 +6,7 @@ const NewsContainer = ({articles}) => {
   let newsArticles = articles.map((story,i) => (
     <NewsArticle key={i} story={story} />
   ))
-  return <main>{newsArticles}></main>
+  return <main>{newsArticles}</main>
 }
 
 export default NewsContainer;
