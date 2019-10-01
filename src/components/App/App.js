@@ -13,12 +13,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      source: local,
+      local, entertainment, health, science, technology
     }
+    this.state.current = local;
+    console.log(this.state)
   }
 
-  handleButton = file => {
-    this.setState({source:file})
+  handleButton = event => {
+    console.log(event.target)
+    this.setState({current:this.state[event.target.name]})
   }
 
   render () {
@@ -26,7 +29,7 @@ class App extends Component {
       <div className="app">
         <Menu handleButton={this.handleButton}/>
         <SearchForm />
-        <NewsContainer articles={this.state.source}/>
+        <NewsContainer articles={this.state.current}/>
       </div>
     );
   }
