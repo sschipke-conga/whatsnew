@@ -10,11 +10,11 @@ nav h2 {
 }
 
 nav span {
-  color: yellow;
+  color: #CE0300;
 }
 
 nav button {
-  background-color: orange;
+  background-color: #CE0300;
   border-radius: 20px;
   font-size: 1em;
   height: 5%;

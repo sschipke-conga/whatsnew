@@ -27,8 +27,9 @@ class App extends Component {
   }
 
   searchStories= (term) => {
+    let searchTerm = term.toLowerCase()
     let stories= [...local, ...health, ...technology, ...science, ...health]
-    this.setState({ current: (stories.filter(story => story.headline.toLowerCase().includes(term.toLowerCase()) || story.description.toLowerCase().includes(term.toLowerCase())))})
+    this.setState({ current: (stories.filter(story => story.headline.toLowerCase().includes(searchTerm) || story.description.toLowerCase().includes(searchTerm)))})
   }
 
   render () {

@@ -1,17 +1,16 @@
 article {
-  background: yellow;
+  background: #FFFFFF;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   margin: 10px;
 
 }
 
 a {
   border-radius: 0 0 5px 5px;
-  background-color: #B56AF0; 
+  background-color: #FF0400;
   color: black;
 }
 
