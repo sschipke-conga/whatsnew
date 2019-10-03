@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match a snap shot 1`] = `
+<article>
+  <div
+    className="img-div"
+  >
+    <img
+      alt=""
+      src="//www.pic.com"
+    />
+  </div>
+  <h3>
+    EXTRA EXTRA
+  </h3>
+  <p>
+    Read all about it
+  </p>
+  <a
+    target="blank"
+  >
+    For full story
+  </a>
+</article>
+`;
