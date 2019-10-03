@@ -1,17 +1,29 @@
 article {
   background: #FFFFFF;
   border-radius: 5px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
+}
 
+h3 {
+  border-bottom: 2px solid black;
+  margin-top: 5px;
+  height: 15%;
+}
+
+p {
+  height: 12vh;
+  margin-top: 5px;
 }
 
 a {
   border-radius: 0 0 5px 5px;
   background-color: #FF0400;
   color: black;
+  height: 3vh;
 }
 
 .img-div {

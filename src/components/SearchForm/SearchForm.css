@@ -6,7 +6,7 @@ header {
 }
 
 header input {
-  background-color: inherit;
+  background-color: hsla(0, 0%, 50%, 30%);
   border: none;
   border-radius: 10px;
   color: #FFEAEA;
@@ -17,7 +17,7 @@ header input {
 }
 
 input::placeholder {
-  color: #D8D8D8;
+  color: hsla(0, 0%, 85%, 50%);
 }
 
 header button {
