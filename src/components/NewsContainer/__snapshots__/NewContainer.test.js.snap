@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match a snap shot 1`] = `
+<main>
+  <NewsArticle
+    key="0"
+    story={
+      Object {
+        "description": "Read all about it",
+        "headline": "EXTRA EXTRA",
+        "img": "//www.pic.com",
+      }
+    }
+  />
+  <NewsArticle
+    key="1"
+    story={
+      Object {
+        "description": "don't read it",
+        "headline": "Fake news",
+        "img": "//www.pictures.com",
+      }
+    }
+  />
+</main>
+`;
