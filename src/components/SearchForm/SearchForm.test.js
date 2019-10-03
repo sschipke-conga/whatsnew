@@ -22,10 +22,11 @@ describe('SearchForm', () => {
     wrapper.instance().handleChange(event);
     expect(wrapper.state('search')).toEqual('test value')
   });
-  it('on handleSubmit it should reset state', () => {
+  it('on handleSubmit it should reset state when button is clicked', () => {
     wrapper.instance().setState({search:'giant babies'});
     expect(wrapper.state('search')).toEqual('giant babies');
-    wrapper.instance().handleSubmit();
+    wrapper.find('button').simulate('click')
     expect(wrapper.state('search')).toEqual('')
+    expect(mockSearchStories).toHaveBeenCalled()
   })
 })
