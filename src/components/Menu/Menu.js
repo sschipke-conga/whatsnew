@@ -1,10 +1,5 @@
 import React from 'react';
 import './Menu.css'
-// import entertainment from '../../data/entertainment'
-// import health from '../../data/health'
-// import science from '../../data/science'
-// import technology from '../../data/technology'
-// import local from '../../data/local'
 
 const Menu = ({handleButton}) => (
   <nav>
