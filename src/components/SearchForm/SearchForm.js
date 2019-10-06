@@ -10,24 +10,24 @@ class SearchForm extends Component {
   }
 
   handleChange = (e) => {
-    console.log(e.target)
     this.setState({[e.target.name]: e.target.value })
-    if(e.which === 13) {
-      this.handleSubmit()
-    }
   }
 
-  handleSubmit = (e) => {
-    if (e.which === 13 || e.type === 'click') {
+  handleSubmit = () => {
     this.props.searchStories(this.state.search)
     this.setState({search:''})
+  }
+
+  submitHelper = e => {
+    if(e.which === 13) {
+      this.handleSubmit();
     }
   }
 
   render() {
   return (
   <header>
-    <input onChange={this.handleChange} onKeyPress={this.handleSubmit} type="text" placeholder="Search articles" name="search" value={this.state.search}/>
+    <input onChange={this.handleChange} onKeyPress={this.submitHelper} type="text" placeholder="Search articles" name="search" value={this.state.search}/>
     <button type="button" onClick={this.handleSubmit}>Search</button>
   </header>
   )
