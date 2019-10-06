@@ -9,7 +9,7 @@ const NewsArticle = ({story}) => (
     </div>
     <h3>{story.headline}</h3>
     <p>{story.description}</p>
-    <a href={story.url} target="blank">For full story</a>
+    <a href={story.url} target="blank">Click here for full story</a>
   </article>
 )
 export default NewsArticle;
