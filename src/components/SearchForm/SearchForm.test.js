@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import SearchForm from './SearchForm';
 
 describe('SearchForm', () => {
-  let event = { target: { name: 'search', value: 'test value' } };
+  let event = { which: 13, target: { name: 'search', value: 'test value' } };
   const mockSearchStories= jest.fn();
   let wrapper;
   beforeEach(() => {
@@ -27,6 +27,10 @@ describe('SearchForm', () => {
     expect(wrapper.state('search')).toEqual('giant babies');
     wrapper.find('button').simulate('click')
     expect(wrapper.state('search')).toEqual('')
+    expect(mockSearchStories).toHaveBeenCalled()
+  })
+  it('should run search stories if enter key is pressed in input', () => {
+    wrapper.instance().submitHelper(event);
     expect(mockSearchStories).toHaveBeenCalled()
   })
 })

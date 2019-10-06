@@ -27,7 +27,12 @@ class SearchForm extends Component {
   render() {
   return (
   <header>
-    <input onChange={this.handleChange} onKeyPress={this.submitHelper} type="text" placeholder="Search articles" name="search" value={this.state.search}/>
+    <input onChange={this.handleChange} 
+    onKeyPress={this.submitHelper} 
+    type="text" 
+    placeholder="Search articles" 
+    name="search"
+    value={this.state.search}/>
     <button type="button" onClick={this.handleSubmit}>Search</button>
   </header>
   )
