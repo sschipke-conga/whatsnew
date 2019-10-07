@@ -8,4 +8,7 @@ This application was built with `create-react-app` and tested with Jest and Enzy
 
 For this project I used a Trello board to help myself stay organized and on top of things.
 
+## Screenshot
+You can find the live version of the app [here](https://sschipke.github.io/whatsnew/)
+
 ![picture](./screenshots/whatsnew.png)
